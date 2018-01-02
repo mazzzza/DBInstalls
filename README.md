@@ -16,13 +16,21 @@ Use mysqldump to backup your databases to text files!
 Stop the database server
 
 `sudo rm /usr/local/mysql`
+
 `sudo rm -rf /usr/local/mysql*`
+
 `sudo rm -rf /Library/StartupItems/MySQLCOM`
+
 `sudo rm -rf /Library/PreferencePanes/My*`
+
 edit `/etc/hostconfig` and remove the line `MYSQLCOM=-YES-`
+
 `rm -rf ~/Library/PreferencePanes/My*`
+
 `sudo rm -rf /Library/Receipts/mysql*`
+
 `sudo rm -rf /Library/Receipts/MySQL*`
+
 `sudo rm -rf /private/var/db/receipts/*mysql*`
 
 The last three lines are particularly important as otherwise, you can't install an older version of MySQL even though you think that you've completely deleted the newer version!
